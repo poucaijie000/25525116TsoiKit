@@ -1,1 +1,126 @@
-/*not yet*/
+/* ===== Global reset: remove default margins and paddings on every element ===== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base body: dark text on white, common web font */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Top nav: full-width dark bar ===== */
+.nav-belt {
+  width: 100%;
+  height: 60px;
+  background-color: #131921;
+}
+
+/* Inner bar: full width, content stretches to both edges */
+.nav-belt-inner {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;   /* clear float: parent wraps floating children */
+}
+
+/* Logo: float left, small left gap */
+.nav-logo {
+  float: left;
+  width: 90px;
+  margin: 12px 0 0 30px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 36px;
+  text-decoration: none;
+}
+
+/* Location: float left, two lines */
+.nav-location {
+  float: left;
+  color: #fff;
+  padding: 10px 10px 0 80px;
+}
+.nav-location .line1 {
+  font-size: 12px;
+  color: #ccc;
+  display: block;
+}
+.nav-location .line2 {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+/* Search box: float left, wide middle area */
+.nav-search {
+  float: left;
+  width: 1800px;
+  height: 40px;
+  margin: 10px 0 0 50px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.search-cate {
+  float: left;
+  width: 90px;
+  height: 40px;
+  background-color: #f3f3f3;
+  font-size: 12px;
+  text-align: center;
+  line-height: 40px;
+}
+.search-input {
+  float: left;
+  width: 520px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.search-btn {
+  float: right;
+  width: 90px;
+  height: 40px;
+  background-color: #febd69;
+  border-radius: 0 4px 4px 0;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+/* Right group: floats to the far right */
+.nav-right {
+  float: right;
+  margin-right: 50px;
+}
+.nav-lang,
+.nav-account,
+.nav-order {
+  float: left;
+  color: #fff;
+  padding: 8px 18px;
+}
+.nav-lang {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 18px;
+}
+.nav-account .line1,
+.nav-order .line1 {
+  font-size: 12px;
+  display: block;
+}
+.nav-account .line2,
+.nav-order .line2 {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+.nav-cart {
+  float: left;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 10px 5px 0 10px;
+}
