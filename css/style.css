@@ -124,3 +124,31 @@ body {
   line-height: 40px;
   padding: 10px 5px 0 10px;
 }
+
+/* ===== Secondary nav: full-width lighter dark bar ===== */
+.nav-main {
+  width: 100%;
+  background-color: #232f3e;
+}
+
+.nav-main-inner {
+  width: 100%;
+}
+
+/* Each category link: float left side by side */
+.sub-item {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 12px;
+}
+
+/* Hover effect: pseudo-class selector */
+.sub-item:hover {
+  outline: 1px solid #fff;
+}
+
+/* Clearfix extra-tag method: empty div breaks the float */
+.clear {
+  clear: both;
+}
