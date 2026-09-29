@@ -166,7 +166,7 @@ body {
 
 /* ===== Promo banner row: fixed width, centered ===== */
 .banner-row {
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   /* margin:0 auto centering */
 }
@@ -182,4 +182,84 @@ body {
 .banner-card img {
   width: 100%;
   display: block;
+}
+
+/* ===== Content area: wraps the two card rows, keeps top/bottom spacing ===== */
+.content-bg {
+  width: 100%;
+  padding: 20px 0;        
+}
+
+/* ===== Card row: fixed width, centered ===== */
+.card-row {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* Clear float method 3: parent uses ::after pseudo-element to wrap floating cards */
+.card-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Spacing between the two card rows: adjacent sibling selector */
+.card-row + .card-row {
+  margin-top: 20px;
+}
+
+/* One white card: float left, padding counts inside the width */
+.card {
+  float: left;
+  width: 335px;
+  height: 470px;
+  padding: 20px;
+  box-sizing: border-box;   /* padding counts inside 285px */
+  background-color: #fff;
+  margin-right: 20px;
+}
+
+/* Last card: no right margin, otherwise the row overflows to a new line */
+.card.last {
+  margin-right: 0;
+}
+
+/* Card title: fixed height so every card's image grid starts at the same level */
+.card h3 {
+  font-size: 18px;
+  height: 44px;           
+  line-height: 22px;      
+  overflow: hidden;       
+  margin-bottom: 10px;
+}
+
+
+/* 2x2 image grid container: wraps the floating images */
+.card-imgs {
+  overflow: hidden;   /* clear float: container wraps floating images */
+}
+
+/* 2x2 image grid inside the card: images float left, all same size */
+.card-imgs img {
+  float: left;
+  width: 135px;
+  height: 135px;
+  margin: 0 9px 9px 0;
+  display: block;     /* Completely eliminate inline element gaps */ 
+}
+
+
+/* Card bottom link */
+.card a {
+  display: block;
+  color: #007185;
+  font-size: 13px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+/* Base body: gray page background behind the white cards */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3e6e6;   
 }
