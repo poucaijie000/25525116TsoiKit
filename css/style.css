@@ -214,7 +214,7 @@ body {
   width: 335px;
   height: 470px;
   padding: 20px;
-  box-sizing: border-box;   /* padding counts inside 285px */
+  box-sizing: border-box;   
   background-color: #fff;
   margin-right: 20px;
 }
@@ -262,4 +262,94 @@ body {
 body {
   font-family: Arial, sans-serif;
   background-color: #e3e6e6;   
+}
+
+/* ===== Sign-in recommendation: centered text and button on gray background ===== */
+.signin-row {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* Title */
+.signin-row h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Yellow sign-in button: centered with margin: 0 auto */
+.signin-btn {
+  display: block;
+  width: 220px;
+  margin: 0 auto 10px auto;   /* margin: 0 auto horizontal centering */
+  background-color: #ffd814;
+  border: 1px solid #fcd200;
+  color: #111;
+  font-size: 14px;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Small helper text under the button */
+.signin-row p {
+  font-size: 13px;
+}
+.signin-row p a {
+  color: #007185;
+  text-decoration: none;
+}
+
+
+/* ===== Back-to-top bar: full-width ===== */
+.back-to-top {
+  width: 100%;
+  background-color: #37475a;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* ===== Footer: dark background ===== */
+.footer {
+  width: 100%;
+  background-color: #232f3e;
+  padding: 40px 0 30px 0;
+}
+
+/* Footer inner: fixed width, centered */
+.footer-inner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* One link column: float left */
+.footer-col {
+  float: left;
+  width: 220px;
+  margin-right: 40px;
+  color: #fff;
+}
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.footer-col a {
+  display: block;
+  color: #ddd;
+  font-size: 13px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+/* ===== Copyright bar: full-width dark strip ===== */
+.copyright {
+  width: 100%;
+  background-color: #131a22;
+  color: #ddd;
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0;
 }
