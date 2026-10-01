@@ -65,6 +65,7 @@ body {
   border-radius: 4px;
 }
 
+/* Search box: left category dropdown, float left, gray background */
 .search-cate {
   float: left;
   width: 90px;
@@ -75,6 +76,7 @@ body {
   line-height: 40px;
 }
 
+/* Search box: middle input, float left, no border */
 .search-input {
   float: left;
   width: 520px;
@@ -83,6 +85,7 @@ body {
   outline: none;
 }
 
+/* Search box: right orange button, float right */
 .search-btn {
   float: right;
   width: 90px;
@@ -100,6 +103,7 @@ body {
   margin-right: 50px;
 }
 
+/* Right group items: float left, white text */
 .nav-lang,
 .nav-account,
 .nav-order {
@@ -108,6 +112,7 @@ body {
   padding: 8px 18px;
 }
 
+/* Language item: bold, aligned with two-line items */
 .nav-lang {
   font-size: 14px;
   font-weight: bold;
@@ -127,6 +132,7 @@ body {
   display: block;
 }
 
+/* Cart: float left, bold white text */
 .nav-cart {
   float: left;
   color: #fff;
@@ -142,6 +148,7 @@ body {
   background-color: #232f3e;
 }
 
+/* Secondary nav inner row: full width */
 .nav-main-inner {
   width: 100%;
 }
@@ -169,6 +176,7 @@ body {
   width: 1400px;
   margin: 0 auto;
   /* margin:0 auto centering */
+  padding-top: 10px;
 }
 
 /* One banner: float left, one fifth of the row, clickable */
@@ -187,7 +195,7 @@ body {
 /* ===== Content area: wraps the two card rows, keeps top/bottom spacing ===== */
 .content-bg {
   width: 100%;
-  padding: 20px 0;        
+  padding: 20px 0;
 }
 
 /* ===== Card row: fixed width, centered ===== */
@@ -204,20 +212,21 @@ body {
 }
 
 /* Spacing between the two card rows: adjacent sibling selector */
-.card-row + .card-row {
+.card-row+.card-row {
   margin-top: 20px;
 }
 
 /* One white card: float left, padding counts inside the width */
 .card {
   float: left;
-  width: 335px;
+  width: 295px;
+  /* 295 + padding 40 = 335 actual width */
   height: 470px;
   padding: 20px;
-  box-sizing: border-box;   
   background-color: #fff;
   margin-right: 20px;
 }
+
 
 /* Last card: no right margin, otherwise the row overflows to a new line */
 .card.last {
@@ -227,27 +236,29 @@ body {
 /* Card title: fixed height so every card's image grid starts at the same level */
 .card h3 {
   font-size: 18px;
-  height: 44px;           
-  line-height: 22px;      
-  overflow: hidden;       
+  height: 44px;
+  line-height: 22px;
+  overflow: hidden;
   margin-bottom: 10px;
 }
 
 
 /* 2x2 image grid container: wraps the floating images */
 .card-imgs {
-  overflow: hidden;   /* clear float: container wraps floating images */
+  width: 280px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* clear float: container wraps floating images */
 }
 
 /* 2x2 image grid inside the card: images float left, all same size */
 .card-imgs img {
   float: left;
-  width: 135px;
-  height: 135px;
-  margin: 0 9px 9px 0;
-  display: block;     /* Completely eliminate inline element gaps */ 
+  width: 130px;
+  height: 130px;
+  margin: 0 10px 10px 0;
+  display: block;
 }
-
 
 /* Card bottom link */
 .card a {
@@ -261,7 +272,7 @@ body {
 /* Base body: gray page background behind the white cards */
 body {
   font-family: Arial, sans-serif;
-  background-color: #e3e6e6;   
+  background-color: #e3e6e6;
 }
 
 /* ===== Sign-in recommendation: centered text and button on gray background ===== */
@@ -282,7 +293,8 @@ body {
 .signin-btn {
   display: block;
   width: 220px;
-  margin: 0 auto 10px auto;   /* margin: 0 auto horizontal centering */
+  margin: 0 auto 10px auto;
+  /* margin: 0 auto horizontal centering */
   background-color: #ffd814;
   border: 1px solid #fcd200;
   color: #111;
@@ -296,6 +308,8 @@ body {
 .signin-row p {
   font-size: 13px;
 }
+
+/* Sign-in row: link color inside helper text */
 .signin-row p a {
   color: #007185;
   text-decoration: none;
@@ -332,10 +346,14 @@ body {
   margin-right: 40px;
   color: #fff;
 }
+
+/* Footer column: column title */
 .footer-col h4 {
   font-size: 16px;
   margin-bottom: 12px;
 }
+
+/* Footer column: link style, block so each link is on its own line */
 .footer-col a {
   display: block;
   color: #ddd;
