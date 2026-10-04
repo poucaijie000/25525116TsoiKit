@@ -4,10 +4,12 @@
   padding: 0;
 }
 
-/* Base body: dark text on white, common web font */
+/* Base body: gray page background behind the white cards, common web font */
 body {
   font-family: Arial, sans-serif;
+  background-color: #e3e6e6;
 }
+
 
 /* ===== Top nav: full-width dark bar ===== */
 .nav-belt {
@@ -58,7 +60,7 @@ body {
 /* Search box: float left, wide middle area */
 .nav-search {
   float: left;
-  width: 1800px;
+  width: 700px;
   height: 40px;
   margin: 10px 0 0 50px;
   background-color: #fff;
@@ -261,18 +263,12 @@ body {
 }
 
 /* Card bottom link */
-.card a {
+.card > a {
   display: block;
   color: #007185;
   font-size: 13px;
   text-decoration: none;
   margin-top: 10px;
-}
-
-/* Base body: gray page background behind the white cards */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e3e6e6;
 }
 
 /* ===== Sign-in recommendation: centered text and button on gray background ===== */
@@ -310,21 +306,30 @@ body {
 }
 
 /* Sign-in row: link color inside helper text */
-.signin-row p a {
+.signin-row p > a {
   color: #007185;
   text-decoration: none;
 }
 
 
-/* ===== Back-to-top bar: full-width ===== */
+/* ===== Back-to-top bar: full-width　,  jumps back to the top of the page ===== */
 .back-to-top {
+  display: block;
   width: 100%;
   background-color: #37475a;
   color: #fff;
   font-size: 13px;
   text-align: center;
   line-height: 40px;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+/* id selector: the back-to-top anchor */
+#back-to-top {
+  cursor: pointer;
+}
+
 
 /* ===== Footer: dark background ===== */
 .footer {
@@ -347,6 +352,11 @@ body {
   color: #fff;
 }
 
+/* Last link column: no right margin, so 4 x 220px + 3 x 40px = 1000px fills the row evenly */
+.footer-col.last {
+  margin-right: 0;
+}
+
 /* Footer column: column title */
 .footer-col h4 {
   font-size: 16px;
@@ -354,7 +364,7 @@ body {
 }
 
 /* Footer column: link style, block so each link is on its own line */
-.footer-col a {
+.footer-col > a {
   display: block;
   color: #ddd;
   font-size: 13px;
